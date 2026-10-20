@@ -1,0 +1,26 @@
+.shell {
+  min-height: 100dvh;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: calc(var(--nav-height) + env(safe-area-inset-bottom) + 16px);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 14px var(--gutter);
+  padding-top: calc(14px + env(safe-area-inset-top));
+  background: var(--c-brand);
+  color: #fff;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.main {
+  padding: var(--gutter);
+}

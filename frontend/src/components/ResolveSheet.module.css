@@ -1,0 +1,61 @@
+.sheet {
+  position: fixed;
+  inset: auto 0 0 0;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90dvh;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 20px 20px 0 0;
+  background: var(--c-surface);
+  color: var(--c-text);
+  box-shadow: var(--shadow-raised);
+  animation: slide-up 200ms ease-out;
+}
+
+.sheet::backdrop {
+  background: rgb(10 25 38 / 55%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px var(--gutter) calc(20px + env(safe-area-inset-bottom));
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.context {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--c-muted);
+}
+
+.context strong {
+  color: var(--c-text);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet {
+    animation: none;
+  }
+}

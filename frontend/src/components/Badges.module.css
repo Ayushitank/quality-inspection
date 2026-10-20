@@ -1,0 +1,34 @@
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.critical {
+  background: var(--c-critical-bg);
+  color: var(--c-critical);
+}
+
+.major {
+  background: var(--c-major-bg);
+  color: var(--c-major);
+}
+
+.minor {
+  background: var(--c-minor-bg);
+  color: var(--c-minor);
+}
+
+.open {
+  background: var(--c-open-bg);
+  color: var(--c-open);
+}
+
+.resolved {
+  background: var(--c-resolved-bg);
+  color: var(--c-resolved);
+}

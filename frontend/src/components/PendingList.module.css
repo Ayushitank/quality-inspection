@@ -1,0 +1,50 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px var(--gutter);
+  border: 2px dashed #c9a227;
+  border-radius: var(--radius);
+  background: #fffaf0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.machine {
+  min-width: 0;
+  font-size: 1.05rem;
+  overflow-wrap: anywhere;
+}
+
+.meta {
+  color: var(--c-muted);
+  font-size: 0.95rem;
+}
+
+.waiting {
+  color: #7a5b00;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.failure {
+  color: var(--c-danger);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}

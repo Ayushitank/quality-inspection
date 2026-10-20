@@ -1,0 +1,74 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4px;
+  border-radius: var(--radius);
+  background: #e3e9ef;
+}
+
+.tab {
+  min-height: var(--tap);
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  font-weight: 600;
+  color: var(--c-muted);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.tab[aria-pressed='true'] {
+  background: var(--c-surface);
+  color: var(--c-brand);
+  box-shadow: var(--shadow-card);
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--c-brand);
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.sort {
+  flex: 1;
+  min-width: 0;
+}
+
+.order {
+  width: var(--tap);
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--gutter);
+  border-radius: var(--radius);
+  background: var(--c-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px var(--gutter);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.offline {
+  background: #3b2a00;
+  color: #fff3cd;
+}
+
+.syncing {
+  background: var(--c-minor-bg);
+  color: var(--c-minor);
+}
